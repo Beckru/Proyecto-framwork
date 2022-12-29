@@ -4,7 +4,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 def inicio(request):
-    return HttpResponse("inicio")
+    return render(request, 'inicio.html')
 
-def about(request):
-    return HttpResponse("about")
+def registrarse(request):
+    return render(request, 'registrarse.html')
+
+def foro(request):
+    return render(request, 'foro.html')
+
+def login(request):
+    return render(request, 'login.html')
