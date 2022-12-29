@@ -14,3 +14,6 @@ def foro(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def crear_publicacion(request):
+    return render(request, 'crear_publicacion.html')
