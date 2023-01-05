@@ -4,4 +4,10 @@
 
 <h1>Crear publicacion</h1>
 
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Cargar">
+</form>
+
 {% endblock %}
