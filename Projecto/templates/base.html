@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+</head>
+<body>
+    <nav class="navbar container">
+        <ul>
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li>
+                <a href="/login">Login</a>
+            </li>
+            <li>
+                <a href="/registrarse">Registrarse</a>
+            </li>
+            <li>
+                <a href="/foro">Foro</a>
+            </li>
+            <li>
+                <a href="/crear_publicacion">Crear publicacion</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <img src="{% static 'unap.png' %}" alt="" width="1200px">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

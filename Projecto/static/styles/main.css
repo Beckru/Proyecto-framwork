@@ -1,0 +1,37 @@
+body {
+    background: #ffffff;
+}
+
+.navbar {
+    background: #09c4dd;
+    padding: 5px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: rgb(3, 32, 85);
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: aquamarine;
+}
+
+.container {
+    max-width: 1200px;
+    background: #09c4dd;
+    margin: auto;
+}
+
+.container img{
+    padding: 5px 0;
+    background: white;
+}
